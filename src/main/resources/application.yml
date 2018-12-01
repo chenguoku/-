@@ -1,10 +1,12 @@
+server:
+  port: 9999
 #开发配置
 spring:
   #数据源配置
   datasource:
     url: jdbc:mysql://localhost:3306/zd?characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false
-    username: root
-    password: 123456
+    username: zduser
+    password: zd123456
     driver-class-name: com.mysql.cj.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
 
@@ -12,3 +14,4 @@ spring:
 mybatis:
   typeAliasesPackage: com.zd.zd1_0.entity
   mapper-locations: classpath:mapper/*.xml
+
